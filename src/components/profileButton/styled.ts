@@ -38,6 +38,7 @@ export const ProfileButtomStyled = styled.div`
                 color: var(--black1);
                 font-size: 1rem;
                 cursor: pointer;
+                font-weight: 600;
             }
         }
     }
