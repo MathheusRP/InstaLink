@@ -1,6 +1,10 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
-export const PostListStyled = styled.section`
+interface ImageInterface {
+    widthimage: number | undefined
+}
+
+export const PostListStyled = styled.section<ImageInterface>`
     width: 100%;
     margin-bottom: 100px;
 
@@ -12,21 +16,18 @@ export const PostListStyled = styled.section`
     ul {
         display: grid;
         grid-template-columns: 30% 30% 30%;
-        grid-auto-rows: 30%;
         gap: 8px;
         row-gap: 16px;
         justify-content: space-between;
-        height: 90vw;
         width: 90vw;
         min-width: 100%;
         max-width: 800px;
-        max-height: 800px;
-
-        &::after{
-            content: "";
-            height: 190px;
-            width: 100px;
-        }
+        
+        ${({widthimage}) => {
+            return css`
+                grid-auto-rows: ${widthimage}px;
+            `
+        }}
 
         li {
             position: relative;
@@ -46,25 +47,24 @@ export const PostListStyled = styled.section`
 
     ul.display2 {
         grid-template-columns: 48% 48%;
-        grid-auto-rows: 48%;
         gap: 16px;
     }
 
     ul.display3 {
         grid-template-columns: 100%;
-        grid-auto-rows: 100%;
         gap: 32px;
+        justify-content: center;
 
         li img {
-            box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.2);
+            box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.3);
         }
+
     }
 
     .setDiplsyButton {
         position: fixed;
         bottom: 8px;
         z-index: 10;
-        /* display: none; */
     
         .icon {
             height: 40px;
@@ -96,8 +96,24 @@ export const PostListStyled = styled.section`
             }
         }
 
-        .setDisplayModal.modalOff {
+        .closeModal {
+            height: 100vh;
+            width: 100vw;
+            background-color: transparent;
+            position: fixed;
+            bottom: 0;
+            z-index: -2;
+        }
+
+        .modalOff {
             display: none;
         }
+    }
+
+    @media (min-width: 800px){
+        ul.display3 {
+        grid-template-columns: 80%;
+
+    }
     }
 `
