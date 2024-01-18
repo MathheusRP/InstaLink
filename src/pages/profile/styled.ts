@@ -2,8 +2,9 @@ import {styled} from "styled-components"
 
 export const ProfileStyled = styled.main`
     /* border: solid red 4px; */
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
+    height: 100vh;
     max-width: 800px;
     /* background-color: aqua; */
     margin: 0px auto;
@@ -11,6 +12,7 @@ export const ProfileStyled = styled.main`
     align-items: center;
     flex-direction: column;
     padding: 0px 4% ;
+    overflow: hidden;
 
     @media (min-width: 600px){
         padding: 0px 2%;

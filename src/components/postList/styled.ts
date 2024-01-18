@@ -7,6 +7,7 @@ interface ImageInterface {
 export const PostListStyled = styled.section<ImageInterface>`
     width: 100%;
     margin-bottom: 100px;
+    padding-bottom: 150px;
 
     .container {
         height: 100vh;

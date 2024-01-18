@@ -16,6 +16,7 @@ export const GlobalStyled = createGlobalStyle`
 
     body {
         background-color: var(--white1);
+        overflow-y: hidden;
     
     }
 
@@ -30,7 +31,10 @@ export const GlobalStyled = createGlobalStyle`
     :root {
         --white1: #ECECEC;
         --black1: #353535;
+        --black2: #5A5A5A;
+        --grey1: #797979;
         --primaryColor: #21B2E0;
+        --red: #C84343;
 
         --teste: 100vw
     }

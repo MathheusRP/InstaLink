@@ -1,6 +1,7 @@
 import { PostListStyled } from "./styled";
 import { PiGridFourFill } from "react-icons/pi";
 import { useState, useRef, useLayoutEffect } from "react";
+import { PostOpen } from "../openPost";
 
 export const PostList = () => {
 
@@ -53,9 +54,29 @@ export const PostList = () => {
                 <li>
                     <img src="https://i.pinimg.com/564x/f5/05/47/f505479d79562adf0951b1fe5cb662ef.jpg" alt="post 1" />
                 </li>
+                <li>
+                    <img src="https://i.pinimg.com/564x/f5/05/47/f505479d79562adf0951b1fe5cb662ef.jpg" alt="post 1" />
+                </li>
+                <li>
+                    <img src="https://i.pinimg.com/564x/f5/05/47/f505479d79562adf0951b1fe5cb662ef.jpg" alt="post 1" />
+                </li>
+                <li>
+                    <img src="https://i.pinimg.com/564x/f5/05/47/f505479d79562adf0951b1fe5cb662ef.jpg" alt="post 1" />
+                </li>
+                <li>
+                    <img src="https://i.pinimg.com/564x/f5/05/47/f505479d79562adf0951b1fe5cb662ef.jpg" alt="post 1" />
+                </li>
+                <li>
+                    <img src="https://i.pinimg.com/564x/f5/05/47/f505479d79562adf0951b1fe5cb662ef.jpg" alt="post 1" />
+                </li>
+                <li>
+                    <img src="https://i.pinimg.com/564x/f5/05/47/f505479d79562adf0951b1fe5cb662ef.jpg" alt="post 1" />
+                </li>
             
             </ul>
             
+            <PostOpen/>
+
             <div className="setDiplsyButton">
                 <PiGridFourFill className="icon" onClick={() => setModalFunction()}/>
 
