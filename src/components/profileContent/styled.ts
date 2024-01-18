@@ -11,7 +11,6 @@ export const ProfileContentStyled = styled.section`
     display: flex;
     flex-direction: column;
     gap: 16px;
-    
 
     .navigate {
         width: 100%;
