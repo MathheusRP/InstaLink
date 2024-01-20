@@ -2,8 +2,11 @@ import { PostListStyled } from "./styled";
 import { PiGridFourFill } from "react-icons/pi";
 import { useState, useRef, useLayoutEffect } from "react";
 import { PostOpen } from "../openPost";
+import { useParams } from "react-router-dom";
 
 export const PostList = () => {
+
+    const {post} = useParams()
 
     const [display, setDisplay] = useState<string>("")
     const [modal, setModal] = useState<string>("modalOff")
@@ -38,7 +41,8 @@ export const PostList = () => {
     return (
 
         <PostListStyled widthimage={imgwidth}>
-            <ul  className={`${display}`}>
+            <h1>{post}</h1>
+            <ul  className={`postList ${display}`}>
                 <li ref={container}>
                     <img src="https://i.pinimg.com/564x/f5/05/47/f505479d79562adf0951b1fe5cb662ef.jpg" alt="post 1" />
                 </li>
@@ -75,7 +79,9 @@ export const PostList = () => {
             
             </ul>
             
-            <PostOpen/>
+            {
+                post != null ? (<PostOpen/>) : <></>
+            }
 
             <div className="setDiplsyButton">
                 <PiGridFourFill className="icon" onClick={() => setModalFunction()}/>

@@ -14,7 +14,7 @@ export const PostListStyled = styled.section<ImageInterface>`
         background-color: blue;
     }
 
-    ul {
+    .postList {
         display: grid;
         grid-template-columns: 30% 30% 30%;
         gap: 8px;

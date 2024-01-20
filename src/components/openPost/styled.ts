@@ -14,6 +14,7 @@ export const PostOpenStyled = styled.div`
     padding-top: 20px;
     padding-bottom: 100px;
     overflow-x: scroll;
+    /* display: none; */
 
     .postInfo {
         width: 95%;
@@ -120,12 +121,15 @@ export const PostOpenStyled = styled.div`
     }
 
     .comments {
-        height: 300px;
+        /* height: 300px; */
         width: 95%;
         margin-top: 20px;
         border-radius: 20px;
         background-color: var(--white1);
-        padding: 50px 16px 20px 16px;
+        padding: 50px 16px 40px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
 
         .commentsInfo {
             height: 50px;
