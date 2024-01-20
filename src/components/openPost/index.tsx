@@ -1,5 +1,6 @@
 import { PostOpenStyled } from "./styled";
 import { FaComment, FaHeart } from "react-icons/fa";
+import { SendComment, Comments } from "../comments";
 
 export const PostOpen = () => {
 
@@ -37,6 +38,10 @@ export const PostOpen = () => {
                         <FaHeart className="icon"/>
                     </span>
                 </div>
+                <SendComment/>
+
+                <Comments/>
+        
             </section>
         </PostOpenStyled>
     )
