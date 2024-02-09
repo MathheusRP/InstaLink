@@ -1,128 +1,112 @@
 import styled from "styled-components";
 
 export const SendCommentStyled = styled.section`
-    border: solid var(--black2) 2px;
-    border-radius: 16px;
-    position: relative;
-    padding-bottom: 15px;
-
-    textarea {
-        height: 80px;
-        width: 100%;
-        border: none;
-        padding: 10px;
-        color: var(--black2);
-        font-size: 16px;
-        background-color: transparent;
-        outline: none;
-       
-    }
-
-    button {
-        position: absolute;
-        right: 20px;
-        bottom: -14px;
-        padding: 2px 10px;
-        font-size: 16px;
-        border-radius: 8px;
-        border: solid var(--black2) 2px;
-        background-color: var(--white1);
-        font-weight: 600;
-        color: var(--black2);
-    }
+    
 
 `
 
 export const CommentsStyled = styled.ul`
-
-    width: 100%;
-    /* border: solid blue 2px; */
+    
+    /* width: 100vw; */
+    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
-    gap: 64px;
-    margin-top: 20px;
+    gap: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
 
+    &.closeComments {
+        display: none;
+        
+        /* background-color: beige; */
+    }
+    
     li {
-        /* height: 50px; */
-        width: 100%;
-        border: solid var(--black2) 2px;
-        border-radius: 16px;
+        min-height: 150px;
+        /* max-width: 400px; */
+        background-color: var(--white1);
+        border-radius: 18px;
         position: relative;
-        padding: 32px 10px;
+        box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.25);
+        padding: 55px 10px 40px 10px;
 
-        .commentOwner {
+        .CommentOwnerInfo {
+            display: flex;
+            position: absolute;
+            left: 20px;
+            right: 20px;
+            top: -27px;
+            align-items: center;
+
 
             img {
                 width: 50px;
                 height: 50px;
                 object-fit: cover;
                 border-radius: 50%;
-                border: solid var(--black2) 2px;
-                position: absolute;
-                top: -25px;
-                left: 20px;
+                z-index: 2;
+                border: 2px solid var(--white1);
+                box-sizing: content-box;
+                box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.25);
             }
 
-            .time {
-                position: absolute;
-                right: 10px;
-                top: 5px;
-                font-size: 14px;
-                color: var(--grey1);
-            }
-
-            .profileName {
-                padding: 4px 4px 4px 20px;
-                border: solid var(--black2) 2px;
-                width: fit-content;
-                height: 30px;
-                /* width: 100%; */
+            span {
                 background-color: var(--white1);
+                box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.25);
+                padding: 5px 10px 5px 25px ;
+                transform: translateX(-15px);
+                z-index: 1;
                 border-radius: 8px;
-                position: absolute;
-                top: -16px;
-                right: 0px;
-                left: 55px;
-                
 
                 p {
-                    font-size: 16px;
-                    font-weight: 600;
+                    font-size: 18px;
                     color: var(--black2);
-                    display: flex;
-                    
+                    font-weight: 600;
                 }
             }
         }
 
-        .interactions {
-            height: 35px;
-            /* width: 150px; */
-            border-radius: 12px;
-            border: solid var(--black2) 2px;
+        .time {
             position: absolute;
-            bottom: -18px;
+            top: 25px;
             right: 15px;
+            color: var(--grey1);
+        }
+
+        .text {
+            font-size: 16px;
+        }
+
+        .numberOf {
+            position: absolute;
+            bottom: -15px;
+            padding: 5px 10px;
             background-color: var(--white1);
-            display: flex;
-            align-items: center;
-            padding: 0px 8px;
-            gap: 16px;
+            font-size: 18px;
+            border-radius: 8px;
+            box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.25);
+            font-weight: 600;
+            color: var(--black2);
 
-            span {
+            &.comments {
+                left: 20px;
+            }
+
+            &.likers {
+                right: 20px;
                 display: flex;
-                gap: 5px;
-                color: var(--black2);
-               
+                align-items: center;
+                gap: 10px;
 
-                .icon {
-                    font-size: 24px;
-                }
-
-                p {
-                    font-size: 18px;
+                .iconLike {
+                    font-size: 20px;
+                  
+                    
+                    /* color: var(--black2); */
                 }
             }
         }
     }
+   
 `

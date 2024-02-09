@@ -16,7 +16,7 @@ export const GlobalStyled = createGlobalStyle`
 
     body {
         background-color: var(--white1);
-        overflow-y: hidden;
+        /* overflow-y: hidden; */
     
     }
 

@@ -2,9 +2,10 @@ import { ProfileContentStyled } from "./styled";
 import { useParams, Navigate, useNavigate} from "react-router-dom"
 import { PostList } from "../postList";
 
-export const ProfileContent = () => {
+export const ProfileContent = ({userID}: any) => {
     const sectionNavigate = useNavigate()
     const {section, post} = useParams()
+
 
     const navigateFunction = (section: string) => {
         sectionNavigate(section)
@@ -19,9 +20,9 @@ export const ProfileContent = () => {
             </div>
 
             {
-            section == null ? (<PostList/>) 
+            section == null ? (<PostList userID={userID}/>) 
             : 
-            section == "links" ? (<h1></h1>) 
+            section == "links" ? (<h1>link</h1>) 
             : 
             section == "sobre" ? (<h1>sobre</h1>) 
             : 
