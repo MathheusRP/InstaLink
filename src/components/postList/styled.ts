@@ -28,12 +28,13 @@ export const PostListStyled = styled.section<ImageInterface>`
             return css`
                 grid-auto-rows: ${widthimage}px;
             `
-        }}
+        }};
 
         li {
             position: relative;
             display: flex;
             flex-direction: column;
+            height: 100%;
             
             img {
                 border-radius: 12px;

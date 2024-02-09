@@ -12,7 +12,18 @@ export const ProfileStyled = styled.main`
     align-items: center;
     flex-direction: column;
     padding: 0px 4% ;
-    overflow: hidden;
+    /* overflow: auto; */
+    
+    &::-webkit-scrollbar{
+        background-color: transparent;
+        width: 5px;
+        border-radius: 2px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--primaryColor);
+        border-radius: 2px;
+    }
 
     @media (min-width: 600px){
         padding: 0px 2%;

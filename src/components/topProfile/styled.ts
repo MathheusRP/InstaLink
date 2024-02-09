@@ -19,6 +19,7 @@ export const TopProfileStyled = styled.section`
         border-radius: 16px;
         box-shadow: 0px 6px 10px rgb(0, 0, 0, 0.35);
         box-sizing: content-box;
+        object-fit: cover;
     }
 
     .profileImage {
