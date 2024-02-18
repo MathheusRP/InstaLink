@@ -16,8 +16,13 @@ export const GlobalStyled = createGlobalStyle`
 
     body {
         background-color: var(--white1);
+        overflow-x: hidden;
         /* overflow-y: hidden; */
     
+    }
+
+    a {
+        text-decoration: none;
     }
 
     h1, h2, h3, h4, p, button, span {

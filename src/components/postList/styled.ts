@@ -8,6 +8,7 @@ export const PostListStyled = styled.section<ImageInterface>`
     width: 100%;
     margin-bottom: 100px;
     padding-bottom: 150px;
+    
 
     .container {
         height: 100vh;
@@ -44,6 +45,11 @@ export const PostListStyled = styled.section<ImageInterface>`
                 width: 100%;
                 height: 100%;
             }
+        }
+
+        .gost {
+            height: 50px;
+            background-color: black;
         }
     }
 
@@ -110,6 +116,13 @@ export const PostListStyled = styled.section<ImageInterface>`
         .modalOff {
             display: none;
         }
+
+        @media (min-width: 1200px) {
+            left: 32px;
+            transform: scale(1.2);
+        }
+
+        
     }
 
     @media (min-width: 800px){

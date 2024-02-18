@@ -14,7 +14,6 @@ export const PostOpenStyled = styled.div`
     justify-content: center;
     /* z-index: 11; */
     /* overflow-x: hidden; */
-    overflow-y: auto;
 
     .closeButton {
         position: absolute;
@@ -47,16 +46,28 @@ export const PostOpenStyled = styled.div`
     
     .imageContainer {
         /* height: 100%; */
-        /* overflow-y: auto; */
         overflow-x: hidden;
         display: flex;
         flex-direction: column;
-        max-width: 1000px;
+        /* max-width: 1400px; */
         justify-content: center;
-        justify-content: ce;
         padding: 0px;
+        height: fit-content;
         /* max-height: 100vh; */
         /* margin-bottom: 50px; */
+        width: fit-content;
+        width: 100%;
+
+        &::-webkit-scrollbar{
+            background-color: transparent;
+            width: 5px;
+            border-radius: 2px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--primaryColor);
+            border-radius: 2px;
+        }
 
         @media (max-height: 100vh) {
             justify-content: start;
@@ -66,11 +77,13 @@ export const PostOpenStyled = styled.div`
             align-self: center;
             display: flex;
             background-color: var(--black1);
+            width: 100%;
+            /* max-height: 100vh; */
+            
         }
 
         img {
-            width: 100vw;
-            max-width: 100%;
+            width: 100%;
             max-height: 100vh;
             object-fit: contain;
         }
@@ -101,7 +114,7 @@ export const PostOpenStyled = styled.div`
         /* display: flex;
         flex-direction: column; */
         gap: 10px;
-        max-width: 1000px;
+        /* max-width: 1000px; */
         max-height: 100vh;
         /* height: 700px; */
         margin: 0px auto;

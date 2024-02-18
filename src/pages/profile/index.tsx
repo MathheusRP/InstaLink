@@ -5,6 +5,9 @@ import { UserBar } from "../../components/userBar"
 import { useParams, useNavigate } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { userData } from "../../data/user"
+import { Nav } from "../../components/nav"
+import { FriendsList } from "../../components/friendsList"
+
 
 export const Profile = () => {
     const {profileID} = useParams()
@@ -29,17 +32,20 @@ export const Profile = () => {
 
     return (
         <ProfileStyled>
+            <Nav/>
             {
+                
                 profile.userID != undefined ? (
-                    <>
+                    <section className="content">
                         <TopProfile userCover={profile.cover} userImg={profile.img} userName={profile.name}/>
                         <ProfileContent userID={profile.userID}/>
                         <UserBar/>
-                    </>
+                    </section>
                 ) : (
                     <><h1>teste</h1></>
                 )
             }
+            <FriendsList/>
             
         </ProfileStyled>
     )

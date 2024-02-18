@@ -9,7 +9,7 @@ export const UserBarStyled = styled.section`
     bottom: 0px;
     display: flex;
     justify-content: center;
- 
+    left: 0px;
 
     .bar {
         position: absolute;

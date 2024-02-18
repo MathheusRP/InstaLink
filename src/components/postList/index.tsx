@@ -66,10 +66,20 @@ export const PostList = ({userID}: any) => {
                 postList.length > 0 ? 
                 (
                 
-                    postList.map((post: any) => {
+                    postList.map((post: any, index: number) => {
+                        if(index == 0){
+                            return (
+                                <Link key={post.postImgs[0].imgID} to={`p/${post.postID}`}>
+                                    <li ref={container}>
+                                        <img src={post.postImgs[0].img} alt="post 1" />
+                                    </li>
+                                </Link>
+                            )
+                        }
+
                         return (
                             <Link key={post.postImgs[0].imgID} to={`p/${post.postID}`}>
-                                <li ref={container} >
+                                <li>
                                     <img src={post.postImgs[0].img} alt="post 1" />
                                 </li>
                             </Link>
@@ -82,9 +92,7 @@ export const PostList = ({userID}: any) => {
                 <><li ref={container}></li></>
                 )
             }
-                {/* <li ref={container}>
-                    <img src="https://i.pinimg.com/564x/f5/05/47/f505479d79562adf0951b1fe5cb662ef.jpg" alt="post 1" />
-                </li> */}
+                {/* <li className="gost" ref={container} ></li> */}
               
             </ul>
             

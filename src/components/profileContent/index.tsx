@@ -1,5 +1,5 @@
 import { ProfileContentStyled } from "./styled";
-import { useParams, Navigate, useNavigate} from "react-router-dom"
+import { useParams, useNavigate} from "react-router-dom"
 import { PostList } from "../postList";
 
 export const ProfileContent = ({userID}: any) => {
@@ -27,7 +27,6 @@ export const ProfileContent = ({userID}: any) => {
             section == "sobre" ? (<h1>sobre</h1>) 
             : 
             (<h1>{post}</h1>)}
-            {/* (<h1><Navigate to={"/:profile"}/></h1>)} */}
 
         </ProfileContentStyled>
     )

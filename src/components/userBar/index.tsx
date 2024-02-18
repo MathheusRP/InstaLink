@@ -6,7 +6,7 @@ import { ProfileButton } from "../profileButton";
 export const UserBar = () => {
 
     return (
-        <UserBarStyled>
+        <UserBarStyled className="userBar">
             <div className="bar">
                 <FaSearch className="iconBar"/>
                 <MdOutlineAddBox className="iconBar"/>

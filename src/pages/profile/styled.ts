@@ -4,16 +4,17 @@ export const ProfileStyled = styled.main`
     /* border: solid red 4px; */
     /* height: 100%; */
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     max-width: 800px;
     /* background-color: aqua; */
     margin: 0px auto;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    flex-direction: column;
     padding: 0px 4% ;
-    /* overflow: auto; */
-    
+    /* overflow-x: hidden; */
+    /* overflow-y: scroll; */
+/*     
     &::-webkit-scrollbar{
         background-color: transparent;
         width: 5px;
@@ -23,6 +24,11 @@ export const ProfileStyled = styled.main`
     &::-webkit-scrollbar-thumb {
         background-color: var(--primaryColor);
         border-radius: 2px;
+    } */
+
+    .content {
+        display: flex;
+        flex-direction: column;
     }
 
     @media (min-width: 600px){
@@ -31,6 +37,14 @@ export const ProfileStyled = styled.main`
 
     @media (min-width: 800px){
         padding: 0px;
+    }
+
+    @media (min-width: 1400px){
+        .userBar {
+            display: none;
+        }
+
+        
     }
     
 `

@@ -5,14 +5,14 @@ export const userData: IProfile[]  = [
         userID: "maria_silva",
         name: "Maria Silva",
         cover: "https://i.pinimg.com/564x/ed/fb/9f/edfb9f53f30a80514651c4310255b7b7.jpg",
-        img: "https://i.pinimg.com/564x/c4/58/ca/c458cabb5f28c4f6ba0dbbe3bf81713a.jpg",
+        img: "https://imagenswhatsapp.blog.br/wp-content/uploads/2021/10/fotos-para-perfil-whatsapp-gratis-564x500.jpg",
        
     },
     {
         userID: "joao_carlos",
         name: "João Carlos",
-        cover: "https://i.pinimg.com/564x/9a/60/06/9a6006f94af970195129b37898f9331c.jpg",
-        img: "https://i.pinimg.com/736x/c2/81/fd/c281fdbeeff1de5076707463c48304d3.jpg",
+        cover: "https://i.pinimg.com/564x/b0/fa/cc/b0facced7bbb3422678ff4c2a01ffe5e.jpg",
+        img: "https://i.pinimg.com/564x/b7/24/45/b724454822463c7f7a1f78b3d9f56242.jpg",
     },
     {
         userID: "larissa_luiza",
@@ -20,13 +20,25 @@ export const userData: IProfile[]  = [
         cover: "https://i.pinimg.com/564x/16/c0/55/16c055d9dc975a4269a18ee0535f552e.jpg",
         img: "https://i.pinimg.com/564x/4c/03/71/4c0371654e8014a193bb682dbaf568ec.jpg",
     },
+    {
+        userID: "carlos111",
+        name: "Carlos Eduardo",
+        cover: "https://i.pinimg.com/564x/c6/8a/76/c68a76b53574a65a366b6556cdd8edf0.jpg",
+        img: "https://i.pinimg.com/564x/6e/53/3d/6e533da6cdacc748f2f7280ec0017cb4.jpg",
+    },
+    {
+        userID: "ana_julia",
+        name: "Ana Julia",
+        cover: "https://i.pinimg.com/564x/9f/b8/d7/9fb8d753a10de0b580b11b0226d96986.jpg",
+        img: "https://i.pinimg.com/564x/52/b4/e7/52b4e7692ae99ccd5fc76d0fe1948de3.jpg",
+    },
 ]
 
 export const userPostData: IPost[] = [
     {
         ownerID: "maria_silva",
         ownerName: "Maria Silva",
-        ownerImg: "https://i.pinimg.com/564x/c4/58/ca/c458cabb5f28c4f6ba0dbbe3bf81713a.jpg",
+        ownerImg: "https://imagenswhatsapp.blog.br/wp-content/uploads/2021/10/fotos-para-perfil-whatsapp-gratis-564x500.jpg",
         postID: "001",
         time: "14 de Março de 2023",
         numberComment: 3,
@@ -45,9 +57,43 @@ export const userPostData: IPost[] = [
         ]
     },
     {
+        ownerID: "carlos111",
+        ownerName: "Carlos Eduardo",
+        ownerImg: "https://i.pinimg.com/564x/6e/53/3d/6e533da6cdacc748f2f7280ec0017cb4.jpg",
+        postID: "005",
+        time: "14 de Março de 2023",
+        numberComment: 3,
+        numberLikes: 6,
+        ownerComment: "Apresento a vocês essa foto",
+        listOfComments: [],
+        postImgs: [
+            {
+                imgID: "img-0001",
+                img: "https://i.pinimg.com/564x/58/11/9c/58119c999dfca761f2fc9c0a4e029e52.jpg"
+            },
+        ]
+    },
+    {
+        ownerID: "ana_julia",
+        ownerName: "Ana Julia",
+        ownerImg: "https://i.pinimg.com/564x/52/b4/e7/52b4e7692ae99ccd5fc76d0fe1948de3.jpg",
+        postID: "006",
+        time: "14 de Março de 2023",
+        numberComment: 6,
+        numberLikes: 29,
+        ownerComment: "Uma arte muito legal",
+        listOfComments: [],
+        postImgs: [
+            {
+                imgID: "img-0011",
+                img: "https://i.pinimg.com/564x/53/7d/7c/537d7c64e02b0e157a72ec57c9bcdaf1.jpg"
+            },
+        ]
+    },
+    {
         ownerID: "maria_silva",
         ownerName: "Maria Silva",
-        ownerImg: "https://i.pinimg.com/564x/c4/58/ca/c458cabb5f28c4f6ba0dbbe3bf81713a.jpg",
+        ownerImg: "https://imagenswhatsapp.blog.br/wp-content/uploads/2021/10/fotos-para-perfil-whatsapp-gratis-564x500.jpg",
         postID: "002",
         time: "13 de Março de 2023",
         numberComment: 3,
@@ -62,9 +108,26 @@ export const userPostData: IPost[] = [
         ]
     },
     {
+        ownerID: "joao_carlos",
+        ownerName: "João Carlos",
+        ownerImg: "https://i.pinimg.com/564x/b7/24/45/b724454822463c7f7a1f78b3d9f56242.jpg",
+        postID: "004",
+        time: "12 de Março de 2023",
+        numberComment: 7,
+        numberLikes: 9,
+        ownerComment: "Esse foi o melhor desenho feito por mim até hoje",
+        listOfComments: [],
+        postImgs: [
+            {
+                imgID: "img-0008",
+                img: "https://i.pinimg.com/564x/bd/18/bf/bd18bf79af8f5fbc425c33f0c0328760.jpg"
+            },
+        ]
+    },
+    {
         ownerID: "maria_silva",
         ownerName: "Maria Silva",
-        ownerImg: "https://i.pinimg.com/564x/c4/58/ca/c458cabb5f28c4f6ba0dbbe3bf81713a.jpg",
+        ownerImg: "https://imagenswhatsapp.blog.br/wp-content/uploads/2021/10/fotos-para-perfil-whatsapp-gratis-564x500.jpg",
         postID: "003",
         time: "12 de Março de 2023",
         numberComment: 7,
@@ -91,79 +154,38 @@ export const userPostData: IPost[] = [
         ]
     },
     {
-        ownerID: "joao_carlos",
-        ownerName: "João Carlos",
-        ownerImg: "https://i.pinimg.com/736x/c2/81/fd/c281fdbeeff1de5076707463c48304d3.jpg",
-        postID: "004",
-        time: "12 de Março de 2023",
+        ownerID: "ana_julia",
+        ownerName: "Ana Julia",
+        ownerImg: "https://i.pinimg.com/564x/52/b4/e7/52b4e7692ae99ccd5fc76d0fe1948de3.jpg",
+        postID: "007",
+        time: "11 de Março de 2023",
         numberComment: 7,
-        numberLikes: 9,
-        ownerComment: "Esse foi o melhor desenho feito por mim até hoje",
+        numberLikes: 25,
+        ownerComment: "",
         listOfComments: [],
         postImgs: [
             {
-                imgID: "img-0008",
-                img: "https://i.pinimg.com/564x/bd/18/bf/bd18bf79af8f5fbc425c33f0c0328760.jpg"
+                imgID: "img-0012",
+                img: "https://i.pinimg.com/564x/27/b4/35/27b43593633dc505f2e0f6357b09a967.jpg"
             },
         ]
     },
+    {
+        ownerID: "ana_julia",
+        ownerName: "Ana Julia",
+        ownerImg: "https://i.pinimg.com/564x/52/b4/e7/52b4e7692ae99ccd5fc76d0fe1948de3.jpg",
+        postID: "007",
+        time: "11 de Março de 2023",
+        numberComment: 8,
+        numberLikes: 15,
+        ownerComment: "",
+        listOfComments: [],
+        postImgs: [
+            {
+                imgID: "img-0012",
+                img: "https://i.pinimg.com/564x/54/16/8d/54168dcf2e45228866b6609fe63252b2.jpg"
+            },
+        ]
+    },
+    
 ]
-
-
-
-
-// postList: [
-//     {
-//         postID: "001",
-//         time: "14 de Março de 2023",
-//         numberComment: 3,
-//         numberLikes: 6,
-//         ownerComment: "Apresento a vocês essa foto",
-//         listOfComments: [],
-//         img: [
-//             {
-//                 imgID: "img-0001",
-//                 img: "https://i.pinimg.com/564x/dc/b0/28/dcb028b77b06871b30ed9a868b82270f.jpg"
-//             }
-//         ]
-//     },
-//     {
-//         postID: "002",
-//         time: "13 de Março de 2023",
-//         numberComment: 3,
-//         numberLikes: 6,
-//         ownerComment: "Gostei muito de fazer esse desenho",
-//         listOfComments: [],
-//         img: [
-//             {
-//                 imgID: "img-0002",
-//                 img: "https://i.pinimg.com/564x/b9/03/78/b90378c9320cdba078e7dde57765bba9.jpg"
-//             }
-//         ]
-//     },
-//     {
-//         postID: "003",
-//         time: "12 de Março de 2023",
-//         numberComment: 7,
-//         numberLikes: 9,
-//         ownerComment: "Bom dia",
-//         listOfComments: [],
-//         img: [
-//             {
-//                 imgID: "img-0003",
-//                 img: "https://i.pinimg.com/564x/36/5e/b6/365eb636919035af2849442d0c7fffd5.jpg"
-//             }
-//         ]
-//     },
-// ]
-
-
-// {
-//     commentID: "comment-0001",
-//     text: "Gostei muito, parabens",
-//     ownerID: "joao_carlos",
-//     ownerName: "João Carlos",
-//     ownerImg: "https://i.pinimg.com/736x/c2/81/fd/c281fdbeeff1de5076707463c48304d3.jpg",
-//     numberLikes: 3,
-//     numberComment: 0,
-// },
