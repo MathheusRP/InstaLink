@@ -70,16 +70,6 @@ export const PostOpen = () => {
                         <h1>Caregando</h1>
                     )
                 }
-
-                {/* <li>
-                    <img src="https://i.pinimg.com/564x/f4/49/54/f44954450fadfc4a746709d22c9071c8.jpg" alt="post" />
-                </li> */}
-                {/* <li>
-                    <img src="https://i.pinimg.com/564x/e9/6f/38/e96f38df715eaaa25e07758db39a753a.jpg" alt="post" />
-                </li> */}
-                {/* <li>
-                    <img src="https://i.pinimg.com/564x/27/b5/ab/27b5abd9c2b990325c3e400528c97dc9.jpg" alt="post" />
-                </li> */}
             </ul>
             {
                 userPost != undefined ? (
