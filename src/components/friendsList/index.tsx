@@ -39,7 +39,6 @@ export const FriendsList = () => {
                     </li>
                     <span>Mais</span>
                 </ul>
-                
             </div>
         </FriendsListStyled>
     )

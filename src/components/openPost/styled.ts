@@ -12,8 +12,6 @@ export const PostOpenStyled = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* z-index: 11; */
-    /* overflow-x: hidden; */
 
     .closeButton {
         position: absolute;
@@ -45,16 +43,12 @@ export const PostOpenStyled = styled.div`
     }
     
     .imageContainer {
-        /* height: 100%; */
         overflow-x: hidden;
         display: flex;
         flex-direction: column;
-        /* max-width: 1400px; */
         justify-content: center;
         padding: 0px;
         height: fit-content;
-        /* max-height: 100vh; */
-        /* margin-bottom: 50px; */
         width: fit-content;
         width: 100%;
 
@@ -77,9 +71,7 @@ export const PostOpenStyled = styled.div`
             align-self: center;
             display: flex;
             background-color: var(--black1);
-            width: 100%;
-            /* max-height: 100vh; */
-            
+            width: 100%;    
         }
 
         img {
@@ -97,13 +89,11 @@ export const PostOpenStyled = styled.div`
 
             img {
                width: 100vw;
-
             }
         }
     }
 
     .postInfo {
-        /* min-height: 200px; */
         width: 100%;
         background-color: rgb(0, 0, 0, 0.75);
         position: fixed;
@@ -111,12 +101,8 @@ export const PostOpenStyled = styled.div`
         left: 0;
         right: 0px;
         padding: 16px;
-        /* display: flex;
-        flex-direction: column; */
         gap: 10px;
-        /* max-width: 1000px; */
         max-height: 100vh;
-        /* height: 700px; */
         margin: 0px auto;
         overflow-y: scroll;
         transition: 4s;
@@ -160,7 +146,6 @@ export const PostOpenStyled = styled.div`
             display: flex;
             position: relative;
             
-            
             .info {
                 display: flex;
                 align-items: center;
@@ -173,7 +158,6 @@ export const PostOpenStyled = styled.div`
                 border-radius: 50%;
                 }
 
-    
                 h3 {
                     color: var(--white1);
                 }
@@ -191,7 +175,6 @@ export const PostOpenStyled = styled.div`
             color: var(--white1);
             font-size: 1rem;
             overflow-y: auto;
-            /* background-color: aqua; */
 
             &::-webkit-scrollbar{
                 background-color: transparent;

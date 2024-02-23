@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const UserBarStyled = styled.section`
     position: fixed;
     background-color: var(--white1);
-    /* border-top: 3px solid red; */
     height: 65px;
     width: 100vw;
     bottom: 0px;

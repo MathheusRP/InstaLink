@@ -7,7 +7,8 @@ import { useEffect, useState } from "react"
 import { userData } from "../../data/user"
 import { Nav } from "../../components/nav"
 import { FriendsList } from "../../components/friendsList"
-
+import { UserContext } from "../../context/useContext"
+import { useContext } from "react"
 
 export const Profile = () => {
     const {profileID} = useParams()
@@ -15,7 +16,10 @@ export const Profile = () => {
 
     const navigate = useNavigate()
 
+    const { setViewProfile } = useContext(UserContext)
+
     useEffect(() => {
+        setViewProfile(profileID)
         const findUser = userData.filter((user) => {
             if(user.userID == profileID){
                 return user

@@ -6,13 +6,11 @@ export const NavStyled = styled.nav`
     @media (min-width: 1400px){
         display: flex;
         flex-direction: column;
-        /* width: 350px; */
         height: 50vh;
         position: fixed;
         left: 32px;
         top: 32px;
         gap: 18px;
-
 
         p {
             font-size: 24px;
@@ -26,7 +24,6 @@ export const NavStyled = styled.nav`
 
         p:hover {
             color: var(--primaryColor);
-            
         }
 
         p .search {
@@ -42,7 +39,6 @@ export const NavStyled = styled.nav`
             &:hover {
                 border-color: var(--primaryColor);
             }
-            
         }
     }
 

@@ -8,7 +8,6 @@ import { userPostData } from "../../data/user";
 export const PostList = ({userID}: any) => {
 
     const {post} = useParams()
-
     const [display, setDisplay] = useState<string>("display3")
     const [modal, setModal] = useState<string>("modalOff")
 
@@ -50,22 +49,14 @@ export const PostList = ({userID}: any) => {
         setPostList(findUserPostList)
     }, [userID])
 
-    // const navigateToPost = (postID: string) => {
-    //     navigate()
-    // }
-
     return (
 
-        <PostListStyled widthimage={imgwidth}>
-            {/* <h1>{post}</h1> */}
-
-            
+        <PostListStyled widthimage={imgwidth}> 
             <ul  className={`postList ${display}`}>
 
             {
                 postList.length > 0 ? 
                 (
-                
                     postList.map((post: any, index: number) => {
                         if(index == 0){
                             return (
@@ -85,15 +76,12 @@ export const PostList = ({userID}: any) => {
                             </Link>
                         )
                     })
-
                 ) 
                 : 
                 (
                 <><li ref={container}></li></>
                 )
-            }
-                {/* <li className="gost" ref={container} ></li> */}
-              
+            }      
             </ul>
             
             {

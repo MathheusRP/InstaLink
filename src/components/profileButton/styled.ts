@@ -12,7 +12,6 @@ export const ProfileButtomStyled = styled.div`
         border-radius: 50%;
         object-fit: cover;
         cursor: pointer;
-
     }
 
     .profileMenu {
