@@ -16,11 +16,14 @@ export const GlobalStyled = createGlobalStyle`
 
     body {
         background-color: var(--white1);
-        overflow-y: hidden;
-    
+        overflow-x: hidden;
     }
 
-    h1, h2, h3, h4, p, button, span {
+    a {
+        text-decoration: none;
+    }
+
+    h1, h2, h3, h4, p, button, span, a {
         font-family: 'Inter', sans-serif;
     }
 
@@ -35,7 +38,6 @@ export const GlobalStyled = createGlobalStyle`
         --grey1: #797979;
         --primaryColor: #21B2E0;
         --red: #C84343;
-
         --teste: 100vw
     }
 

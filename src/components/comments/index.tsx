@@ -1,105 +1,81 @@
-import { SendCommentStyled, CommentsStyled } from "./styled";
-import { FaComment, FaHeart } from "react-icons/fa";
+import { CommentsStyled } from "./styled";
+import { FaHeart } from "react-icons/fa";
 
-export const SendComment = () => {
-
-    return (
-        <SendCommentStyled>
-            <textarea name="comment" id="comment"/>
-
-            <button type="button">COMENTAR</button>
-
-        </SendCommentStyled>
-    )
-}
-
-export const Comments = () => {
+export const Comments = ({commentsStatus}: any) => {
 
     return (
-        <CommentsStyled>
+        <CommentsStyled className={`${commentsStatus}`}>
             <li>
-                <div className="commentOwner">
-                    <div className="profileName">
-                        <p>Maria Silva</p>
-
-                    </div>
+                <div className="CommentOwnerInfo">
                     <img 
-                    src="https://imagenswhatsapp.blog.br/wp-content/uploads/2021/10/fotos-para-perfil-whatsapp-gratis-564x500.jpg" 
-                    alt="perfil 1" 
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxOBoXQxLHY4Tou4jK4wutobg4Lbw4SQJhSQ&usqp=CAU" 
+                    alt="Foto do comentario 1" 
                     />
-                   <span className="time">23 de Março de 2022</span>
+                    <span>
+                        <p>João Vitor</p>
+                    </span>
                 </div>
-                
-                <p>
+                <span className="time"> 23 de Março de 2023</span>
+                <p className="text">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s  
                 </p>
-                <div className="interactions">
-                    <span>
-                        <FaComment className="icon"/>
-                        <p>25</p>
-                    </span>
-                    <span>
-                        <FaHeart className="icon"/>
-                        <p>150</p>
-                    </span>
-                </div>
+                <span className="numberOf comments">10 Comentarios</span>
+                <span className="numberOf likers"><FaHeart className="iconLike"/> 10</span>
             </li>
             <li>
-                <div className="commentOwner">
-                    <div className="profileName">
-                        <p>Maria Silva</p>
-
-                    </div>
+                <div className="CommentOwnerInfo">
                     <img 
-                    src="https://imagenswhatsapp.blog.br/wp-content/uploads/2021/10/fotos-para-perfil-whatsapp-gratis-564x500.jpg" 
-                    alt="perfil 1" 
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxOBoXQxLHY4Tou4jK4wutobg4Lbw4SQJhSQ&usqp=CAU" 
+                    alt="Foto do comentario 1" 
                     />
-                   <span className="time">23 de Março de 2022</span>
+                    <span>
+                        <p>João Vitor</p>
+                    </span>
                 </div>
-                
-                <p>
+                <span className="time"> 23 de Março de 2023</span>
+                <p className="text">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s  
                 </p>
-                <div className="interactions">
-                    <span>
-                        <FaComment className="icon"/>
-                        <p>25</p>
-                    </span>
-                    <span>
-                        <FaHeart className="icon"/>
-                        <p>150</p>
-                    </span>
-                </div>
+                <span className="numberOf comments">10 Comentarios</span>
+                <span className="numberOf likers"><FaHeart className="iconLike"/> 10</span>
             </li>
             <li>
-                <div className="commentOwner">
-                    <div className="profileName">
-                        <p>Maria Silva</p>
-
-                    </div>
+                <div className="CommentOwnerInfo">
                     <img 
-                    src="https://imagenswhatsapp.blog.br/wp-content/uploads/2021/10/fotos-para-perfil-whatsapp-gratis-564x500.jpg" 
-                    alt="perfil 1" 
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxOBoXQxLHY4Tou4jK4wutobg4Lbw4SQJhSQ&usqp=CAU" 
+                    alt="Foto do comentario 1" 
                     />
-                   <span className="time">23 de Março de 2022</span>
+                    <span>
+                        <p>João Vitor</p>
+                    </span>
                 </div>
-                
-                <p>
+                <span className="time"> 23 de Março de 2023</span>
+                <p className="text">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s  
                 </p>
-                <div className="interactions">
+                <span className="numberOf comments">10 Comentarios</span>
+                <span className="numberOf likers"><FaHeart className="iconLike"/> 10</span>
+            </li>
+            <li>
+                <div className="CommentOwnerInfo">
+                    <img 
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxOBoXQxLHY4Tou4jK4wutobg4Lbw4SQJhSQ&usqp=CAU" 
+                    alt="Foto do comentario 1" 
+                    />
                     <span>
-                        <FaComment className="icon"/>
-                        <p>25</p>
-                    </span>
-                    <span>
-                        <FaHeart className="icon"/>
-                        <p>150</p>
+                        <p>João Vitor</p>
                     </span>
                 </div>
+                <span className="time"> 23 de Março de 2023</span>
+                <p className="text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s  
+                </p>
+                <span className="numberOf comments">10 Comentarios</span>
+                <span className="numberOf likers"><FaHeart className="iconLike"/> 10</span>
             </li>
         </CommentsStyled>
     )

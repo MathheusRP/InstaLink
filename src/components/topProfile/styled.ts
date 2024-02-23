@@ -1,16 +1,11 @@
 import {styled} from "styled-components"
 
 export const TopProfileStyled = styled.section`
-    /* height: 300px; */
-    width: 100%;
-    /* max-width: 650px; */
-    /* border: solid red 1px; */
     margin-top: 16px;
     position: relative;
     display: flex;
     flex-direction: column;
     
-
     .cover {
         width: 100%;
         height: 50vw;
@@ -19,6 +14,7 @@ export const TopProfileStyled = styled.section`
         border-radius: 16px;
         box-shadow: 0px 6px 10px rgb(0, 0, 0, 0.35);
         box-sizing: content-box;
+        object-fit: cover;
     }
 
     .profileImage {
@@ -32,7 +28,6 @@ export const TopProfileStyled = styled.section`
         border: 4px solid var(--white1);
         box-sizing: content-box;
         box-shadow: 0px 6px 10px rgb(0, 0, 0, 0.35);
-     
     }
 
     h3 {

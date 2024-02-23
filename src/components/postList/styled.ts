@@ -8,7 +8,7 @@ export const PostListStyled = styled.section<ImageInterface>`
     width: 100%;
     margin-bottom: 100px;
     padding-bottom: 150px;
-
+    
     .container {
         height: 100vh;
         background-color: blue;
@@ -28,12 +28,13 @@ export const PostListStyled = styled.section<ImageInterface>`
             return css`
                 grid-auto-rows: ${widthimage}px;
             `
-        }}
+        }};
 
         li {
             position: relative;
             display: flex;
             flex-direction: column;
+            height: 100%;
             
             img {
                 border-radius: 12px;
@@ -43,6 +44,11 @@ export const PostListStyled = styled.section<ImageInterface>`
                 width: 100%;
                 height: 100%;
             }
+        }
+
+        .gost {
+            height: 50px;
+            background-color: black;
         }
     }
 
@@ -59,7 +65,6 @@ export const PostListStyled = styled.section<ImageInterface>`
         li img {
             box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.3);
         }
-
     }
 
     .setDiplsyButton {
@@ -109,12 +114,16 @@ export const PostListStyled = styled.section<ImageInterface>`
         .modalOff {
             display: none;
         }
+
+        @media (min-width: 1200px) {
+            left: 32px;
+            transform: scale(1.2);
+        }
     }
 
     @media (min-width: 800px){
         ul.display3 {
-        grid-template-columns: 80%;
-
-    }
+            grid-template-columns: 80%;
+        }
     }
 `
