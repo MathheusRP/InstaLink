@@ -5,11 +5,9 @@ export const HomePostListStyled = styled.section`
     width: 100%;
     max-width: 600px;
     min-height: 500px;
-    /* border: solid blue 2px; */
     margin: 0px auto;
 
     ul {
-        /* background-color: aqua; */
         display: flex;
         flex-direction: column;
         padding: 20px 0px 100px 0px;
@@ -22,7 +20,6 @@ export const HomePostListStyled = styled.section`
             gap: 10px;
 
             .postOwnerProfile {
-                /* background-color: brown; */
                 display: flex;
                 align-items: center;
                 gap: 10px;
@@ -40,7 +37,6 @@ export const HomePostListStyled = styled.section`
                     font-weight: 600;
                     color: var(--black1);
                 }
-
             }
 
             .icon {
@@ -50,25 +46,18 @@ export const HomePostListStyled = styled.section`
                 font-size: 20px;
             }
 
-            figure {
-                /* width: 100%; */
-                /* background-color: var(--black2); */
-                
+            figure .imgLink {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                background-color: var(--black2);
 
-                .imgLink {
-                    display: flex;
-                    justify-content: center;
+                img {
                     width: 100%;
-                    background-color: var(--black2);
-
-                    img {
-                        width: 100%;
-                        /* width: 100%; */
-                        object-fit: cover;
-                        max-height: 700px;
-                    }
-                }  
-            }
+                    object-fit: cover;
+                    max-height: 700px;
+                }
+            }  
 
             .postButtons {
                 display: flex;
@@ -78,7 +67,6 @@ export const HomePostListStyled = styled.section`
                 .likeIcon {
                     font-size: 32px;
                     color: var(--black2);
-                    /* background-color: aqua; */
                     position: absolute;
                     right: 16px;
                     top: 10px;
@@ -91,8 +79,6 @@ export const HomePostListStyled = styled.section`
                     font-size: 16px;
                 }
             }
-
-            
         }
     }
 

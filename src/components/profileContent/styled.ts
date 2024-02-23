@@ -4,7 +4,6 @@ export const ProfileContentStyled = styled.section`
 
     min-height: 300px;
     width: 100%;
-    /* max-width: 650px; */
     border-top: solid var(--black1) 3px;
     margin-top: 100px;
     padding: 16px 0px;
@@ -16,7 +15,6 @@ export const ProfileContentStyled = styled.section`
         width: 100%;
         display: flex;
         justify-content: space-around;
-        /* background-color: brown; */
 
         p {
             width: 100px;

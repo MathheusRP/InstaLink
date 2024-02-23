@@ -1,14 +1,5 @@
-import { SendCommentStyled, CommentsStyled } from "./styled";
+import { CommentsStyled } from "./styled";
 import { FaHeart } from "react-icons/fa";
-
-export const SendComment = () => {
-
-    return (
-        <SendCommentStyled>
-
-        </SendCommentStyled>
-    )
-}
 
 export const Comments = ({commentsStatus}: any) => {
 

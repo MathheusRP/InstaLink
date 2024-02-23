@@ -1,35 +1,24 @@
 import styled from "styled-components";
 
-export const SendCommentStyled = styled.section`
-    
-
-`
-
 export const CommentsStyled = styled.ul`
-    
-    /* width: 100vw; */
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     gap: 70px;
     padding-top: 50px;
     padding-bottom: 50px;
-    
 
     &.closeComments {
         display: none;
-        
-        /* background-color: beige; */
     }
     
     li {
         min-height: 150px;
-        /* max-width: 400px; */
         background-color: var(--white1);
         border-radius: 18px;
         position: relative;
         box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.25);
         padding: 55px 10px 40px 10px;
+        max-width: 600px;
 
         .CommentOwnerInfo {
             display: flex;
@@ -38,7 +27,6 @@ export const CommentsStyled = styled.ul`
             right: 20px;
             top: -27px;
             align-items: center;
-
 
             img {
                 width: 50px;
@@ -101,12 +89,8 @@ export const CommentsStyled = styled.ul`
 
                 .iconLike {
                     font-size: 20px;
-                  
-                    
-                    /* color: var(--black2); */
                 }
             }
         }
     }
-   
 `

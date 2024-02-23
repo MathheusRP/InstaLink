@@ -9,7 +9,6 @@ export const PostListStyled = styled.section<ImageInterface>`
     margin-bottom: 100px;
     padding-bottom: 150px;
     
-
     .container {
         height: 100vh;
         background-color: blue;
@@ -66,7 +65,6 @@ export const PostListStyled = styled.section<ImageInterface>`
         li img {
             box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.3);
         }
-
     }
 
     .setDiplsyButton {
@@ -121,14 +119,11 @@ export const PostListStyled = styled.section<ImageInterface>`
             left: 32px;
             transform: scale(1.2);
         }
-
-        
     }
 
     @media (min-width: 800px){
         ul.display3 {
-        grid-template-columns: 80%;
-
-    }
+            grid-template-columns: 80%;
+        }
     }
 `

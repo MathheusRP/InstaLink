@@ -6,7 +6,6 @@ export const FriendsListStyled = styled.section`
     top: 350px;
     left: 32px;
     
-
     .myProfile {
         display: flex;
         flex-direction: column;
@@ -27,8 +26,7 @@ export const FriendsListStyled = styled.section`
             .myName {
                 color: var(--black2);
                 font-size: 20px;
-                font-weight: 600;
-                
+                font-weight: 600;    
             }
         } 
     }
@@ -63,8 +61,6 @@ export const FriendsListStyled = styled.section`
                 span {
                     color: var(--black1);
                     font-size: 18px;
-                    
-                    /* font-weight: 400; */
                 }
             }
         }
@@ -73,10 +69,7 @@ export const FriendsListStyled = styled.section`
     @media (min-width: 1400px) {
         display: flex;
         position: fixed;
-        /* height: 200px; */
         width: 240px;
-        /* border: solid red 2px; */
-        
     }
 
     @media (min-width: 1600px) {

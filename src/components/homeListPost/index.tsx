@@ -9,7 +9,6 @@ export const HomePostList = () => {
     return (
         <HomePostListStyled>
             <ul>
-
                 {
                    userPostData.map((post, index) => (
                     <li key={index}>

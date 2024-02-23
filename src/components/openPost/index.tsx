@@ -1,5 +1,4 @@
 import { PostOpenStyled } from "./styled";
-// import { FaComment, FaHeart } from "react-icons/fa";
 import { Comments } from "../comments";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
@@ -7,12 +6,11 @@ import { userPostData } from "../../data/user";
 
 export const PostOpen = () => {
     const { postID } = useParams()
-
     const navigate = useNavigate()
-
     const [infoStatus, setInfoStatus] = useState<string>("open")
     const [infoAnimatio, setInfoAnimatio] = useState<string>("up")
     const [commentsStatus, setCommentsStatus] = useState<string>("closeComments")
+    const [userPost, setUserPost] = useState<any | undefined>(undefined)
 
     const infoStatusFunction = () => {
         if(infoStatus == "open"){
@@ -30,16 +28,12 @@ export const PostOpen = () => {
     }
 
     const commentsStatusFunction = () => {
-
         if(commentsStatus == "openComments") {
             setCommentsStatus("closeComments")
         } else {
             setCommentsStatus("openComments")
         }
     }
-
-    const [userPost, setUserPost] = useState<any | undefined>(undefined)
-
 
     useEffect(() => {
         const findPost = userPostData.filter((post) => {
@@ -54,7 +48,6 @@ export const PostOpen = () => {
         <PostOpenStyled >
             <span onClick={() => navigate(-1)} className={`closeButton ${infoStatus} ${infoAnimatio}`}>X</span>
             <ul onClick={() => infoStatusFunction()} className="imageContainer">
-
                 {
                     userPost != undefined ? (
                         userPost.postImgs.map((imgs: any) => {
@@ -64,8 +57,6 @@ export const PostOpen = () => {
                                 </li>
                             )
                         })
-
-                       
                     ) : (
                         <h1>Caregando</h1>
                     )
